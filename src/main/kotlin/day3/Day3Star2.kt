@@ -46,14 +46,14 @@ class Day3Star2 {
     }
 
     private fun findGears(schematic: List<String>): Map<Pair<Int, Int>, Int> {
-        val possibleGearsMap = mutableMapOf<Pair<Int, Int>, List<Int>>()
+        val possibleGearsMap = mutableMapOf<Pair<Int, Int>, MutableList<Int>>()
 
         schematic.forEachIndexed { schematicLineIndex, schematicLine ->
             partNumberRegex.findAll(schematicLine).forEach {
                 val partNumber = it.groups[1]!!.value.toInt()
                 val stars = findAdjacentStars(schematic, schematicLineIndex, it.groups[1]!!.range)
                 stars.forEach { starLocation ->
-                    possibleGearsMap.computeIfAbsent(starLocation) { mutableListOf() }.addLast(partNumber)
+                    possibleGearsMap.computeIfAbsent(starLocation) { mutableListOf() }.add(partNumber)
                 }
             }
         }
