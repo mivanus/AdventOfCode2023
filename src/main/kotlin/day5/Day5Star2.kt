@@ -81,6 +81,7 @@ class Day5Star2 {
         }.distinct().minBy { it.first }
 
         println("[Day5Star2] Lowest location: ${lowestLocation.first}")
+        check(lowestLocation.first == 12634632L)
     }
 
     private fun mapToDestinationRanges(src: LongRange, instruction: List<Instruction>): Set<LongRange> {

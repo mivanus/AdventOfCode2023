@@ -45,6 +45,7 @@ class Day2Star1 {
         }
 
         println("[Day2Star1] Possible games ID sum: $possibleGamesIndexSum")
+        check(possibleGamesIndexSum == 2265)
     }
 
     private fun isGamePossibleFor(red: Int, green: Int, blue: Int, game: Triple<Int, Int, Int>): Boolean {

@@ -43,6 +43,7 @@ class Day3Star1 {
         val partNumbersSum = partNumbers.sum()
 
         println("[Day3Star1] Part number sum: $partNumbersSum")
+        check(partNumbersSum == 535235)
     }
 
     private fun findPartNumbers(schematic: List<String>): List<Int> {

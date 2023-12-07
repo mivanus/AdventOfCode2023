@@ -34,6 +34,7 @@ class Day6Star2 {
         val wins = calculateWins(time, distance)
 
         println("[Day6Star2] Wins: $wins")
+        check(wins == 23501589L)
     }
 
     private fun calculateWins(maxTime: Long, distance: Long): Long {

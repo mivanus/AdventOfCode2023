@@ -55,6 +55,7 @@ class Day4Star1 {
 
 
         println("[Day4Star1] Cards are worth: $gameWorth")
+        check(gameWorth == 20855)
     }
 
 }

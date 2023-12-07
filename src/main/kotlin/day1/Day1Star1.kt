@@ -34,6 +34,7 @@ class Day1Star1 {
         val calibrationSum = inputFile?.lines()?.sumOf { extractCalibrationValue(it) }
 
         println("[Day1Star1] Calibration sum: $calibrationSum")
+        check(calibrationSum == 55607)
     }
 
     private fun extractCalibrationValue(calibrationInput: String): Int {

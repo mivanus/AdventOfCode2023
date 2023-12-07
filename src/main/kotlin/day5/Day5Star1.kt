@@ -149,6 +149,7 @@ class Day5Star1 {
 
 
         println("[Day5Star1] Lowest location: $lowestLocation")
+        check(lowestLocation == 51752125L)
     }
 
     private fun convert(src: Long, instructions: List<ConversionInstruction>): Long {

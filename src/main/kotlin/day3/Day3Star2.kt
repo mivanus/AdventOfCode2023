@@ -43,6 +43,7 @@ class Day3Star2 {
         val gearRatioSum = gears.values.sum()
 
         println("[Day3Star2] Gear ratio sum: $gearRatioSum")
+        check(gearRatioSum == 79844424)
     }
 
     private fun findGears(schematic: List<String>): Map<Pair<Int, Int>, Int> {

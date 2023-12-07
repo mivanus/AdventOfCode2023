@@ -65,6 +65,7 @@ class Day4Star2 {
         val totalCards = numberOfCards.values.reduce(Int::plus)
 
         println("[Day4Star2] Total scratchcards: $totalCards")
+        check(totalCards == 5489600)
     }
 
     private fun getNumberOfMatchingNumbers(game: String): Int {

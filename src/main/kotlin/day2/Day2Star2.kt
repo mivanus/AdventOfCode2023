@@ -42,6 +42,7 @@ class Day2Star2 {
         }
 
         println("[Day2Star2] Sum of the game powers: $gamePowerSum")
+        check(gamePowerSum == 64097)
     }
 
     private fun gamePower(game: Triple<Int, Int, Int>): Int {

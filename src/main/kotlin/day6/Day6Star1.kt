@@ -77,6 +77,7 @@ class Day6Star1 {
         }
 
         println("[Day6Star1] Wins per game multiplied: ${winsPerGame.reduce(Int::times)}")
+        check(winsPerGame.reduce(Int::times) == 1083852)
     }
 
 }
