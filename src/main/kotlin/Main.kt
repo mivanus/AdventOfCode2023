@@ -10,6 +10,8 @@ import day5.Day5Star1
 import day5.Day5Star2
 import day6.Day6Star1
 import day6.Day6Star2
+import day7.Day7Star1
+import day7.Day7Star2
 
 fun main(args: Array<String>) {
     Day1Star1().solve()
@@ -24,4 +26,6 @@ fun main(args: Array<String>) {
     Day5Star2().solve()
     Day6Star1().solve()
     Day6Star2().solve()
+    Day7Star1().solve()
+    Day7Star2().solve()
 }

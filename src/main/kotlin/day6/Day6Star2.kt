@@ -23,7 +23,6 @@ package day6
  */
 class Day6Star2 {
 
-
     fun solve() {
         val inputFile = this.javaClass.getResource("/day6/input.txt")?.readText()
         val inputFileLines = inputFile!!.lines()
