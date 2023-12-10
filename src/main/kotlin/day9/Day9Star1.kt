@@ -109,7 +109,7 @@ class Day9Star1 {
             extrapolatedNumbers.add(n.last())
 
             if (n.all { it == 0L }) {
-                break;
+                break
             }
         }
 
